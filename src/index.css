@@ -9,6 +9,7 @@ body, html {
   background-size: cover;
   background-blend-mode: multiply;
   overflow-x: hidden;
+  background-color: url('./assets/./images/background.jpg');
 }
 
 .main-content {
@@ -366,7 +367,7 @@ body, html {
   }
 
 
-/* Estilos para el encabezado */
+
 .hero-heading {
   font-family: 'Racing Sans One', cursive;
   font-size: 2.7rem; 
@@ -375,21 +376,21 @@ body, html {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
   -webkit-text-stroke: 1px rgba(0,0,0,0.8);
   padding-bottom: 15px;
-  white-space: nowrap; /* Evita que el texto se rompa */
-  margin-top: 2rem; /* Ajusta el valor según sea necesario */
+  white-space: nowrap; 
+  margin-top: 80px; 
 }
 
 @media (min-width: 480px) {
   .hero-heading {
     font-size: 3rem; /* Tamaño para pantallas medianas */
-    margin-top: 2.5rem; /* Ajusta el margen para pantallas medianas */
+    margin-top: 80px; /* Ajusta el margen para pantallas medianas */
   }
 }
 
 @media (min-width: 768px) {
   .hero-heading {
     font-size: 4rem; /* Tamaño para pantallas grandes */
-    margin-top: 3rem; /* Ajusta el margen para pantallas grandes */
+    margin-top: 80px; /* Ajusta el margen para pantallas grandes */
   }
 }
 
