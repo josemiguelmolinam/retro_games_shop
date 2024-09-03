@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import Modal from 'react-modal';
 import ReactLoading from 'react-loading';
+import emailjs from 'emailjs-com';
 
 Modal.setAppElement('#root');
 
@@ -21,11 +22,21 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setLoading(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    try {
+      await emailjs.send(
+        'service_zvxim8a',
+        'template_ujvea5c',
+        data,
+        '73Ua-iCNYBoRywSyJ'
+      );
 
-    setShowConfirmation(true);
-    setLoading(false);
-    reset();
+      setShowConfirmation(true);
+      reset();
+    } catch (error) {
+      console.error('EmailJS error:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const customStyles = {
@@ -208,15 +219,11 @@ const Contact = () => {
             </p>
             <p className='md:mb-2 mb-3 text-gray-300'>
               <strong className='text-cyan-400'>Email:</strong>{' '}
-              jdmlegendsimports.gmail.com
+              jdmlegendsimports@gmail.com
             </p>
-            <p className='md:mb-2 mb-3 text-gray-300'>
-              <strong className='text-cyan-400'>Country:</strong> Tokyo, Japan
-            </p>
-            <p className='md:mb-2 mb-3 text-gray-300'>
-              <strong className='text-cyan-400'>Office Hours:</strong> Mon-Fri,
-              9am-5pm
-            </p>
+            <div className='flex justify-center mt-4'>
+              <MdOutlineMarkEmailRead className='text-3xl text-cyan-400' />
+            </div>
           </div>
         </div>
       </div>
