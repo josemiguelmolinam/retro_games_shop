@@ -7,7 +7,7 @@ const Hero = () => {
       <div className='h-screen container  flex flex-col md:flex-row justify-center items-center'>
         <div className='w-full md:w-2/4 md:mb-24 space-x-5 mt-10 md:order-2 md:mt-0 p-4'>
           <h1
-            className='text-[45px] md:ml-[115px] ml-8 mt-8 mb-4 font-racing py-20 lg:text-7xl font-bold leading-tight text-center mx-auto'
+            className='text-[47px] md:ml-[115px] ml-12 mt-8 mb-4 font-racing py-20 lg:text-7xl font-bold leading-tight text-center mx-auto'
             style={{
               color: '#03e9f4',
               textShadow:
@@ -21,7 +21,7 @@ const Hero = () => {
             JDM LEGENDS
           </h1>
           <p
-            className='text-[28px] font-racing lg:text-4xl mb-8 p-4 text-gray-200 font-medium'
+            className='text-[28px] font-racing lg:text-4xl mb-8 p-4 text-gray-200 font-medium text-center mx-auto'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
@@ -31,7 +31,7 @@ const Hero = () => {
             Explore the legacy of classic Japanese Cars
           </p>
           <p
-            className='text-[14px] font-serif font-semibold p-4 text-gray-300 lg:text-base py-1'
+            className='text-[14px] font-serif font-semibold p-4 text-gray-300 lg:text-base py-1 text-center mx-auto'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',

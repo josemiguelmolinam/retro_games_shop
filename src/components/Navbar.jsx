@@ -86,7 +86,7 @@ const Navbar = () => {
             toggle={handleMenuToggle}
             size={28}
             color='#03e9f4'
-            duration={0.5}
+            duration={0.3}
           />
         </div>
       </nav>
