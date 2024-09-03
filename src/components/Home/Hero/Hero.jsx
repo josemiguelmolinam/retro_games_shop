@@ -6,18 +6,7 @@ const Hero = () => {
     <div className='md:mt-6 text-white md:ml-24'>
       <div className='h-screen container  flex flex-col md:flex-row justify-center items-center'>
         <div className='w-full md:w-2/4 md:mb-24 space-x-5 mt-10 md:order-2 md:mt-0 p-4'>
-          <h1
-            className='text-[47px] md:ml-[115px] ml-12 mt-8 mb-4 font-racing py-20 lg:text-7xl font-bold leading-tight text-center mx-auto'
-            style={{
-              color: '#03e9f4',
-              textShadow:
-                '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-              WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-
-              display: 'inline-block',
-              paddingBottom: '15px',
-            }}
-          >
+        <h1 className='hero-heading'>
             JDM LEGENDS
           </h1>
           <p
