@@ -230,7 +230,7 @@ const Contact = () => {
       >
         <div className='flex flex-col items-center justify-center'>
           <MdOutlineMarkEmailRead size={65} color='#03e9f4' />
-          <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-100'>
+          <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-100 '>
             Thank you for your message!
           </h2>
           <p className='text-center text-gray-300'>

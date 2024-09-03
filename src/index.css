@@ -420,8 +420,9 @@ html {
 
 @media (max-width: 767px) {
   .ReactModal__Content {
-    max-width: 63%;
-    max-height: 40%;
+    max-width: 70%;
+    max-height: 65%;
     padding: 15px;
+    
   }
 }
