@@ -11,7 +11,7 @@ const About = () => {
     <div className='text-white py-[120px]'>
       <div className='container mx-auto px-12'>
         <h1
-          className='text-center text-4xl mb-16 p-4 font-racing py-5 lg:text-4xl font-bold leading-tight'
+          className='text-center text-3xl mb-16 p-4 font-racing py-5 lg:text-4xl font-bold leading-tight'
           style={{
             color: '#03e9f4',
             textShadow:

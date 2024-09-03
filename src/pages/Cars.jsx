@@ -7,7 +7,7 @@ const Cars = () => {
     <div className='text-white mt-[120px] md:mt-[160px]'>
       <div className='grid text-center'>
         <h1
-          className='text-center text-4xl p-6 mb-4 font-racing py-5 lg font-bold leading-tight'
+          className='text-center text-3xl p-6 mb-4 font-racing py-5 lg font-bold leading-tight'
           style={{
             color: '#03e9f4',
             textShadow:

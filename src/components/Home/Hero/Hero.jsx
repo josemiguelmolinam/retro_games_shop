@@ -7,7 +7,7 @@ const Hero = () => {
       <div className='h-screen container  flex flex-col md:flex-row justify-center items-center'>
         <div className='w-full md:w-2/4 md:mb-24 space-x-5 mt-10 md:order-2 md:mt-0 p-4'>
           <h1
-            className='text-[55px] md:ml-[115px] ml-8 mt-8 mb-4 font-racing py-20 lg:text-7xl font-bold leading-tight'
+            className='text-[45px] md:ml-[115px] ml-8 mt-8 mb-4 font-racing py-20 lg:text-7xl font-bold leading-tight text-center mx-auto'
             style={{
               color: '#03e9f4',
               textShadow:
