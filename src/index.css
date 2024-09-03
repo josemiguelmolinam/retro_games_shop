@@ -4,13 +4,16 @@
 @tailwind utilities;
 
 body, html {
-  background: url('./assets/./images/background.jpg') 
-  center/cover no-repeat;
+  height: 100%;
+  margin: 0;
+  background-image: url('./assets/images/background.jpg');
+  background-position: center;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-color: #052148;
   overflow-x: hidden;
-  background-color: url('./assets/./images/background.jpg');
 }
+
 
 .main-content {
   margin-top: 80px;
