@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import Modal from 'react-modal';
 import ReactLoading from 'react-loading';
 
@@ -78,19 +78,21 @@ const Contact = () => {
           >
             Connect with Our Team
           </h2>
-          
-          <form 
-            onSubmit={handleSubmit(onSubmit)} 
+
+          <form
+            onSubmit={handleSubmit(onSubmit)}
             className='space-y-4'
-            name="contact" 
-            method="POST" 
-            data-netlify="true" 
-            netlify-honeypot="bot-field" 
-            action="/success">
-              
-            <input type="hidden" name="form-name" value="contact" />
+            name='contact'
+            method='POST'
+            data-netlify='true'
+            netlify-honeypot='bot-field'
+            action='/success'
+          >
+            <input type='hidden' name='form-name' value='contact' />
             <div style={{ display: 'none' }}>
-              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              <label>
+                Don’t fill this out if you're human: <input name='bot-field' />
+              </label>
             </div>
 
             <div>
@@ -227,8 +229,8 @@ const Contact = () => {
         closeTimeoutMS={300}
       >
         <div className='flex flex-col items-center justify-center'>
-          <MdOutlineMarkEmailRead size={80} color='#03e9f4' />
-          <h2 className='text-2xl md:text-2xl font-racing font-bold mb-4 text-center text-gray-100'>
+          <MdOutlineMarkEmailRead size={65} color='#03e9f4' />
+          <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-100'>
             Thank you for your message!
           </h2>
           <p className='text-center text-gray-300'>

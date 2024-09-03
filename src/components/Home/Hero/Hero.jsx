@@ -6,9 +6,7 @@ const Hero = () => {
     <div className='md:mt-6 text-white md:ml-24'>
       <div className='h-screen container  flex flex-col md:flex-row justify-center items-center'>
         <div className='w-full md:w-2/4 md:mb-24 space-x-5 mt-10 md:order-2 md:mt-0 p-4'>
-        <h1 className='hero-heading'>
-            JDM LEGENDS
-          </h1>
+          <h1 className='hero-heading'>JDM LEGENDS</h1>
           <p
             className='text-[28px] font-racing lg:text-4xl mb-8 p-4 text-gray-200 font-medium text-center mx-auto'
             style={{
