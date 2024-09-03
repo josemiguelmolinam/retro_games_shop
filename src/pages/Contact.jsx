@@ -19,7 +19,6 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (data) => {
-    console.log(data);
     setLoading(true);
 
     await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -34,7 +33,6 @@ const Contact = () => {
       backgroundColor: 'rgba(0, 0, 0, 0.8)',
       zIndex: 1000,
     },
-
     content: {
       top: '50%',
       left: '50%',
@@ -80,7 +78,21 @@ const Contact = () => {
           >
             Connect with Our Team
           </h2>
-          <form onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
+          
+          <form 
+            onSubmit={handleSubmit(onSubmit)} 
+            className='space-y-4'
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field" 
+            action="/success">
+              
+            <input type="hidden" name="form-name" value="contact" />
+            <div style={{ display: 'none' }}>
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+
             <div>
               <label htmlFor='name' className='block text-gray-300 mb-1'>
                 Name
@@ -200,7 +212,8 @@ const Contact = () => {
               <strong className='text-cyan-400'>Country:</strong> Tokyo, Japan
             </p>
             <p className='md:mb-2 mb-3 text-gray-300'>
-              <strong className='text-cyan-400'>Hours:</strong> Mon-Fri, 9am-5pm
+              <strong className='text-cyan-400'>Office Hours:</strong> Mon-Fri,
+              9am-5pm
             </p>
           </div>
         </div>
@@ -208,16 +221,26 @@ const Contact = () => {
 
       <Modal
         isOpen={showConfirmation}
-        style={customStyles}
-        contentLabel='Message Sent Confirmation'
         onRequestClose={() => setShowConfirmation(false)}
+        contentLabel='Confirmation Modal'
+        style={customStyles}
+        closeTimeoutMS={300}
       >
-        <div className='flex items-center justify-center mb-6'>
-          <MdOutlineMarkEmailRead size={50} color='#03e9f4' />
+        <div className='flex flex-col items-center justify-center'>
+          <MdOutlineMarkEmailRead size={80} color='#03e9f4' />
+          <h2 className='text-2xl md:text-2xl font-racing font-bold mb-4 text-center text-gray-100'>
+            Thank you for your message!
+          </h2>
+          <p className='text-center text-gray-300'>
+            We will get back to you as soon as possible.
+          </p>
+          <button
+            onClick={() => setShowConfirmation(false)}
+            className='linka mt-6'
+          >
+            Close
+          </button>
         </div>
-        <p className='text-center text-white text-1xl font-racing'>
-          Your message has been sent successfully!
-        </p>
       </Modal>
     </div>
   );
