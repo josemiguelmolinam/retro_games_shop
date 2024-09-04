@@ -59,8 +59,8 @@ const About = () => {
           <div className='about-image md:flex md:items-center'>
             <img
               className='w-full h-auto md:h-[425px] mt-6 rounded-lg object-cover'
-              
-              alt='Our Story FOTO 1'
+              src='/touge.jpg'
+              alt='Touge image'
             />
           </div>
         </div>
@@ -106,8 +106,8 @@ const About = () => {
           <div className='about-image md:flex md:items-center'>
             <img
               className='w-full h-auto md:h-[425px] mt-10 rounded-lg object-cover'
-            
-              alt='Our Vision FOTO 2'
+              src='/shutoko.png'
+              alt='Shutoko image'
             />
           </div>
         </div>
