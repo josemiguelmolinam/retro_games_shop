@@ -6,16 +6,19 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import logo from '../assets/logo-web.svg';
 
 const Footer = () => {
   return (
-    <footer className='bg-transparent text-white py-12 border-t border-gray-700/50 md:mt-32 lg:mt-32 xl:mt-40' style={{
-      backgroundImage: `url('./assets/images/background.jpg')`,
-      backgroundSize: 'cover',
-      backgroundBlendMode: 'multiply',
-    }}>
+    <footer
+      className='bg-transparent text-white py-12 border-t border-gray-700/50 md:mt-32 lg:mt-32 xl:mt-40'
+      style={{
+        backgroundImage: `url('./assets/images/background.jpg')`,
+        backgroundSize: 'cover',
+        backgroundBlendMode: 'multiply',
+      }}
+    >
       <div className='container mx-auto px-4'>
         <div className='grid grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div>
@@ -80,28 +83,28 @@ const Footer = () => {
         </div>
 
         <div className='flex justify-center md:mt-30 md:ml-[1150px] mt-8 space-x-6'>
-          <a
+          {/*<a
             href='https://facebook.com'
             aria-label='Facebook'
             className='social-link'
           >
             <FaFacebookF size={24} />
-          </a>
+          </a>*/}
           <a
-            href='https://twitter.com'
+            href='https://x.com/JDMLegendsCars'
             aria-label='Twitter'
             className='social-link'
           >
-            <FaTwitter size={24} />
+            <FaXTwitter size={24} />
           </a>
           <a
-            href='https://www.instagram.com/jdmlegendsimports/'
+            href='https://www.instagram.com/jdmlegendsexports/'
             aria-label='Instagram'
             className='social-link'
           >
             <FaInstagram size={24} />
           </a>
-        {/* <a
+          {/* <a
             href='https://linkedin.com'
             aria-label='LinkedIn'
             className='social-link'
@@ -109,7 +112,7 @@ const Footer = () => {
             /<FaLinkedinIn size={24} />
           </a>*/}
           <a
-            href='https://youtube.com'
+            href='https://www.youtube.com/@JDMLegendsImports'
             aria-label='YouTube'
             className='social-link'
           >

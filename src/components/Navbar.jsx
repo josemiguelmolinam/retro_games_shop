@@ -28,13 +28,12 @@ const Navbar = () => {
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
-  
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop, scrollDirection]); 
+  }, [lastScrollTop, scrollDirection]);
 
   const NavLink = ({ to, children }) => (
     <Link
@@ -72,7 +71,8 @@ const Navbar = () => {
           className='hidden md:flex items-center ml-12 gap-7'
           style={{
             color: '#03e9f4',
-            textShadow: '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
+            textShadow:
+              '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
             WebkitTextStroke: '1px rgba(0,0,0,0.7)',
           }}
         >
