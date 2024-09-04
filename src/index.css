@@ -171,7 +171,7 @@ html {
 }
 
 .linka {
-  @apply text-[#03e9f4] tracking-[4px] text-[10px] border-2 border-[#03e9f4] rounded p-2 w-full text-sm font-bold;
+  @apply text-[#03e9f4] tracking-[4px] text-[10px] border-2 border-[#03e9f4] rounded-lg p-2 w-full text-sm font-bold;
 }
 
 .linka:hover {
@@ -199,7 +199,7 @@ html {
 }
 
 .car-info {
-  @apply text-[#03e9f4] border-2 border-[#03e9f4] text-sm font-bold rounded;
+  @apply text-[#03e9f4] border-2 border-[#03e9f4] text-sm font-bold rounded-lg;
 }
 
 .car-info:hover {
@@ -423,5 +423,35 @@ html {
     max-width: 70%;
     max-height: 65%;
     padding: 15px;
+  }
 }
+
+.square-button {
+  width: 114px;
+  height: 36px;
+  border-radius: 8px;
+  border: 2px solid #0ef;
+  color: #0ef;
+  font-weight: bold;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0 8px;
+  margin-top: 45px;
+}
+
+.square-button:hover {
+  background-color: #0ef;
+  color: #fff;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.button-text {
+  font-size: 0.675rem;
 }

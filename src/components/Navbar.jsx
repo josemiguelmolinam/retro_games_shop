@@ -11,24 +11,31 @@ const Navbar = () => {
   const [scrollDirection, setScrollDirection] = useState('down');
   const [navbarVisible, setNavbarVisible] = useState(true);
   const ref = useRef(null);
+
   useClickAway(ref, () => setMenuOpen(false));
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.pageYOffset;
+
       if (currentScrollTop > lastScrollTop) {
-        setScrollDirection('up');
-      } else {
         setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
       }
 
       setNavbarVisible(currentScrollTop < 80 || scrollDirection === 'down');
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
+    // Adding scroll event listener
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollTop, scrollDirection]);
+
+    // Cleanup function to remove scroll event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop, scrollDirection]); // Dependencies should trigger effect as needed
 
   const NavLink = ({ to, children }) => (
     <Link
@@ -66,8 +73,7 @@ const Navbar = () => {
           className='hidden md:flex items-center ml-12 gap-7'
           style={{
             color: '#03e9f4',
-            textShadow:
-              '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
+            textShadow: '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
             WebkitTextStroke: '1px rgba(0,0,0,0.7)',
           }}
         >
@@ -76,9 +82,6 @@ const Navbar = () => {
           <NavLink to='/services'>Services</NavLink>
           <NavLink to='/about'>About Us</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
-          <div className='relative'>
-            <button className='flex font-racing items-center mt-1 justify-center text-xl rounded-full btn'></button>
-          </div>
         </div>
         <div className='md:hidden flex items-center mr-4 relative z-50'>
           <Hamburger
@@ -99,7 +102,7 @@ const Navbar = () => {
 
 const NavMobile = ({ setMenuOpen }) => {
   const ref = useRef(null);
-  useClickAway(ref, () => setMenuOpen(true));
+  useClickAway(ref, () => setMenuOpen(false));
 
   const NavLinkMobile = ({ to, text }) => (
     <li

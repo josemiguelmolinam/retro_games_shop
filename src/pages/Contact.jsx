@@ -221,9 +221,9 @@ const Contact = () => {
               <strong className='text-cyan-400'>Email:</strong>{' '}
               jdmlegendsimports@gmail.com
             </p>
-            <div className='flex justify-center mt-4'>
-              <MdOutlineMarkEmailRead className='text-3xl text-cyan-400' />
-            </div>
+            <p className='md:mb-2 mb-3 text-gray-300'>
+    <strong className='text-cyan-400'>Location:</strong> Tokyo, Japan
+  </p>
           </div>
         </div>
       </div>
