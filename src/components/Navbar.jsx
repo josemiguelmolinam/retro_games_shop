@@ -28,14 +28,13 @@ const Navbar = () => {
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
-    // Adding scroll event listener
+  
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup function to remove scroll event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop, scrollDirection]); // Dependencies should trigger effect as needed
+  }, [lastScrollTop, scrollDirection]); 
 
   const NavLink = ({ to, children }) => (
     <Link
@@ -102,7 +101,7 @@ const Navbar = () => {
 
 const NavMobile = ({ setMenuOpen }) => {
   const ref = useRef(null);
-  useClickAway(ref, () => setMenuOpen(false));
+  useClickAway(ref, () => setMenuOpen(true));
 
   const NavLinkMobile = ({ to, text }) => (
     <li
