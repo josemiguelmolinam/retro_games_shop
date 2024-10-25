@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { getAIResponse } from './api/chatApi';
 import robotIcon from '../public/robot.png';
 import userIcon from '../public/user.png';
 
