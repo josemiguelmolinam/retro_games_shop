@@ -1,6 +1,6 @@
 import React from 'react';
 
-import meet from '../assets/logo-web.svg';
+import meet from '../../public/logo-bueno.png';
 
 import man from '../assets/images/man.png';
 import woman from '../assets/images/woman.png';

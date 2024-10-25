@@ -25,7 +25,7 @@ const Hero = () => {
               WebkitTextStroke: '1px rgba(0,0,0,0.1)',
             }}
           >
-            Welcome to JDM Legends, we specialize in exporting classic Japanese
+            Welcome to JDM Legends, we specialize in importing classic Japanese
             vehicles from Japan
           </p>
         </div>

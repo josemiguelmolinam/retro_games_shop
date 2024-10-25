@@ -11,6 +11,7 @@ import FAQs from './pages/FAQ';
 import Contact from './pages/Contact';
 import Support from './pages/Support';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ChatBox from '../src/ChatBox'; 
 
 const App = () => {
   return (
@@ -32,6 +33,10 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
+
+        <div className="fixed bottom-4 right-4">
+          <ChatBox />
+        </div>
       </div>
     </Router>
   );

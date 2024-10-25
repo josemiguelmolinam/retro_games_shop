@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../assets/images/jdmlegend.jpg';
+import img from '../../../../public/jdmlegend.jpg';
 
 const OurMission = () => {
   return (
