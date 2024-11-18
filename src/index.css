@@ -43,7 +43,8 @@ body::-webkit-scrollbar {
 
 .btn:hover {
   color: white;
-  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 
 .btm {
@@ -57,7 +58,8 @@ body::-webkit-scrollbar {
 
 .btm:hover {
   color: white;
-  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 
 .btp {
@@ -93,7 +95,8 @@ body::-webkit-scrollbar {
 .social-link:hover,
 .link:hover {
   color: white;
-  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 
 .featured-card {
@@ -186,7 +189,8 @@ body::-webkit-scrollbar {
 
 .linka:hover {
   @apply text-white bg-[#03e9f4];
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
@@ -202,7 +206,8 @@ body::-webkit-scrollbar {
   border-color: #03e9f4;
   transform: scale(0.99);
   transition: transform 0.7s ease;
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
@@ -212,7 +217,8 @@ body::-webkit-scrollbar {
 
 .car-info:hover {
   @apply text-white bg-[#03e9f4];
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
@@ -358,7 +364,8 @@ body::-webkit-scrollbar {
 
 .modal-close-button:hover {
   @apply text-white bg-[#03e9f4];
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
@@ -441,7 +448,8 @@ body::-webkit-scrollbar {
   width: auto;
   text-align: center;
   cursor: pointer;
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
 }
 
 .chat-send-btn:hover {
@@ -468,7 +476,8 @@ body::-webkit-scrollbar {
     width: 80px;
     text-align: center;
     cursor: pointer;
-    transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+    transition: border-color 0.7s ease, box-shadow 0.7s ease,
+      background-color 0.7s ease;
   }
 
   .chat-send-btn:hover {
@@ -507,6 +516,7 @@ body::-webkit-scrollbar {
     font-size: 0.675rem;
   }
 
+  html,
   body {
     height: 100%;
     margin: 0;
@@ -520,6 +530,7 @@ body::-webkit-scrollbar {
     background-color: #052148;
     background-attachment: fixed;
     overflow-x: hidden;
+    touch-action: manipulation;
   }
 
   body::-webkit-scrollbar {
@@ -566,7 +577,7 @@ body::-webkit-scrollbar {
   .chatbox-input {
     flex-grow: 1;
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     background-color: #374151;
     border: none;
@@ -599,7 +610,8 @@ body::-webkit-scrollbar {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -623,7 +635,8 @@ body::-webkit-scrollbar {
 
 .linke:hover {
   @apply text-white bg-[#03e9f4];
-  transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
@@ -669,7 +682,8 @@ body::-webkit-scrollbar {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -685,8 +699,6 @@ body::-webkit-scrollbar {
 }
 
 .chatbox {
-  animation: fade-in 0.3s ease-in-out;
-  transition: all 0.3s ease;
 }
 
 .linke {
@@ -695,8 +707,94 @@ body::-webkit-scrollbar {
 
 .linke:hover {
   @apply text-white bg-[#03e9f4];
+  transition: border-color 0.7s ease, box-shadow 0.7s ease,
+    background-color 0.7s ease;
+  box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  width: 400px;
+  height: 500px;
+  background-color: #1e293b;
+  border: 1px solid #03e9f4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chatbox .chatbox-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chatbox .chatbox-messages .message {
+  max-width: 80%;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.chatbox .chatbox-input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #374151;
+}
+
+.chatbox .chatbox-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: #1f2937;
+  border: none;
+  border-radius: 4px;
+}
+
+.chat-icon {
+  @apply fixed bottom-4 right-24 bg-[#1e293b] text-[#03e9f4] border-2 border-[#03e9f4] rounded-full p-2 w-12 h-12 shadow-lg flex justify-center items-center;
   transition: border-color 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+}
+
+.chat-icon:hover {
+  @apply text-white bg-[#03e9f4];
   box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
 }
 
 
+@media (max-width: 767px) {
+  .chatbox {
+    top: 300px;
+    right: 20px;
+    width: 89vw;
+    height: 39vh;
+  }
+
+  .chatbox .chatbox-messages {
+    padding: 9px;
+  }
+
+  .chatbox .chatbox-input {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  .chatbox .chat-send-btn {
+    margin-left: 8px;
+    padding: 5px 12px;
+    font-size: 15px;
+  }
+  .chat-icon {
+    bottom: 30px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}

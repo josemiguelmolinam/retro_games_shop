@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
   FaYoutube,
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import logo from '../assets/logo-web.svg';
+
 
 const Footer = () => {
   return (
@@ -83,13 +81,7 @@ const Footer = () => {
         </div>
 
         <div className='flex justify-center md:mt-30 md:ml-[1150px] mt-8 space-x-6'>
-          {/*<a
-            href='https://facebook.com'
-            aria-label='Facebook'
-            className='social-link'
-          >
-            <FaFacebookF size={24} />
-          </a>*/}
+      
           <a
             href='https://x.com/JDMLegendsCars'
             aria-label='Twitter'
@@ -98,19 +90,12 @@ const Footer = () => {
             <FaXTwitter size={24} />
           </a>
           <a
-            href='https://www.instagram.com/jdmlegendsexports/'
+            href='https://www.instagram.com/jdmlegendsimports/'
             aria-label='Instagram'
             className='social-link'
           >
             <FaInstagram size={24} />
           </a>
-          {/* <a
-            href='https://linkedin.com'
-            aria-label='LinkedIn'
-            className='social-link'
-          >
-            /<FaLinkedinIn size={24} />
-          </a>*/}
           <a
             href='https://www.youtube.com/@JDMLegendsImports'
             aria-label='YouTube'
@@ -131,3 +116,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
