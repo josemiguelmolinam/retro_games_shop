@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import carsData from './CarsData';
 import Carousel from '../components/Carousel';
@@ -20,12 +20,12 @@ const CarDetail = () => {
     return <h2>Car not found</h2>;
   }
 
-  const galleryImages = [
-    { id: 1, src: car.image, alt: `${car.make} ${car.model}` },
-    { id: 2, src: car.image, alt: `${car.make} ${car.model}` },
-    { id: 3, src: car.image, alt: `${car.make} ${car.model}` },
-    { id: 4, src: car.image, alt: `${car.make} ${car.model}` },
-  ];
+ 
+ const galleryImages = car.images.map((src, index) => ({
+  id: index + 1, 
+  src, 
+  alt: `${car.make} ${car.model} view ${index + 1}`, 
+}));
 
   const openModal = (image) => {
     setSelectedImage(image);

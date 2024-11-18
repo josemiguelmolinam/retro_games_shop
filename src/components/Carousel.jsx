@@ -40,11 +40,11 @@ const Carousel = ({ images }) => {
 
   return (
     <div
-      className='carousel-container'
+      className="carousel-container"
       onMouseEnter={handleMouse}
       onMouseLeave={handleMouse}
     >
-      <div className='carousel-slide'>
+      <div className="carousel-slide">
         {images.map((image, index) => (
           <div
             key={index}
@@ -52,11 +52,12 @@ const Carousel = ({ images }) => {
               counter - 1 === index ? 'carousel-show' : 'carousel-not-show'
             }
           >
-            <img src={image.src} alt={image.alt} />
+            {/* Asegurarse de que se maneja tanto strings como objetos de imágenes */}
+            <img src={typeof image === 'string' ? image : image.src} alt={image.alt || `Slide ${index + 1}`} />
           </div>
         ))}
       </div>
-      <div className='carousel-page'>
+      <div className="carousel-page">
         {images.map((_, index) => (
           <span
             key={index}
@@ -72,3 +73,4 @@ const Carousel = ({ images }) => {
 };
 
 export default Carousel;
+

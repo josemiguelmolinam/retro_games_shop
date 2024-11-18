@@ -94,9 +94,9 @@ const Featured = () => {
   };
 
   return (
-    <div className='container text-center mt-38 mx-auto'>
+    <div className="container text-center mt-38 mx-auto">
       <h1
-        className='text-center md:text-center text-3xl mt-10 font-racing py-5 lg:text-4xl font-bold leading-tight'
+        className="text-center md:text-center text-3xl mt-10 font-racing py-5 lg:text-4xl font-bold leading-tight"
         style={{
           color: '#03e9f4',
           textShadow:
@@ -109,13 +109,13 @@ const Featured = () => {
         Featured Cars
       </h1>
 
-      <div className='mt-[50px]'>
+      <div className="mt-[50px]">
         <Slider {...settings}>
           {CarsData.map((car) => (
             <div key={car.id}>
               <FeaturedCard
                 id={car.id}
-                img={car.image}
+                img={car.image || (car.images && car.images[0])}
                 name={`${car.make} ${car.model}`}
                 price={car.price}
               />
