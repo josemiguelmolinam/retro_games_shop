@@ -11,7 +11,7 @@ const gamesData = [
     title: 'GameCube (Versión NTSC)',
     genre: 'Consola',
     year: 2001,
-    price: '120',
+    price: '175',
     platform: 'Nintendo',
     description:
       'GameCube Gris NTSC versión japonesa, con su caja, todos los accesorios incluyendo un mando, cables, documentación, un mando adicional negro y el juego Mario Party 4.',
@@ -23,7 +23,7 @@ const gamesData = [
     title: 'Sony PlayStation 1 (Versión NTSC)',
     genre: 'Consola',
     year: 1994,
-    price: '90',
+    price: '145',
     platform: 'Sony',
     description:
       'PlayStation 1 NTSC versión japonesa, con su caja, accesorios, un mando, cables de alimentación y cable RGB.',
@@ -35,7 +35,7 @@ const gamesData = [
     title: 'Sony PlayStation 2 Ed. GT3 (Versión NTSC)',
     genre: 'Consola',
     year: 2001,
-    price: '150',
+    price: '195',
     platform: 'Sony',
     description:
       'PlayStation 2 Edición Gran Turismo 3, versión NTSC japonesa, incluye un mando, cables, documentación, el juego Gran Turismo 3, una tarjeta de memoria y su caja.',
@@ -47,7 +47,7 @@ const gamesData = [
     title: 'Super Famicom (Versión NTSC)',
     genre: 'Consola',
     year: 1990,
-    price: '100',
+    price: '175',
     platform: 'Nintendo',
     description:
       'Super Famicom NTSC versión japonesa, con dos mandos, cable de alimentación, cable de conexión a TV y su caja.',
@@ -59,7 +59,7 @@ const gamesData = [
     title: 'Nintendo 64 (Versión NTSC)',
     genre: 'Consola',
     year: 1996,
-    price: '110',
+    price: '175',
     platform: 'Nintendo',
     description:
       'Nintendo 64 NTSC versión japonesa, incluye un mando, conector de alimentación, instrucciones y su caja.',
@@ -71,7 +71,7 @@ const gamesData = [
     title: 'Game Boy DMG (Versión NTSC)',
     genre: 'Consola',
     year: 1989,
-    price: '80',
+    price: '120',
     platform: 'Nintendo',
     description:
       'Game Boy DMG versión NTSC japonesa, incluye la consola, un mando, cable de alimentación y su caja.',
