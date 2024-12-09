@@ -132,7 +132,7 @@ const Contact = () => {
                 {...register('email', { required: true })}
               />
               {errors.email && (
-                <p className='text-red-500 text-sm'>This field is required</p>
+                <p className='text-red-500 text-sm'>Este campo es obligatorio</p>
               )}
             </div>
 
@@ -181,7 +181,7 @@ const Contact = () => {
                   <span className='ml-2'>Enviando...</span>
                 </div>
               ) : (
-                'Send Message'
+                'Enviar Mensaje'
               )}
             </button>
           </form>
@@ -219,7 +219,7 @@ const Contact = () => {
             </p>
             <p className='text-gray-300'>
               <strong className='text-cyan-400 text-center'>Ubicación:</strong>{' '}
-              Tokio, Japan
+              Tokio, Japón
             </p>
           </div>
         </div>
@@ -235,16 +235,16 @@ const Contact = () => {
         <div className='flex flex-col items-center justify-center'>
           <MdOutlineMarkEmailRead size={65} color='#03e9f4' />
           <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-100 '>
-            Thank you for your message!
+          ¡Gracias por tu mensaje!
           </h2>
           <p className='text-center text-gray-300'>
-            We will get back to you as soon as possible.
+          Nos pondremos en contacto contigo lo antes posible.
           </p>
           <button
             onClick={() => setShowConfirmation(false)}
             className='linka mt-6'
           >
-            Close
+            Cerrar
           </button>
         </div>
       </Modal>
