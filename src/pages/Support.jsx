@@ -11,55 +11,72 @@ const Support = () => {
           WebkitTextStroke: '1px rgba(0,0,0,0.8)',
         }}
       >
-        Customer Support
+        Soporte al Cliente
       </h1>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How can I get in touch with customer support?
+          ¿Cómo puedo ponerme en contacto con el soporte al cliente?
         </h2>
         <p>
-          You can reach our customer support team through multiple channels. For
-          immediate assistance, you can call us at our dedicated support
-          hotline. Alternatively, you can send us an email or use the contact
-          form on our website. Our support team is available Monday through
-          Friday, from 9 AM to 6 PM time in Japan, to address your inquiries.
+          Puedes ponerte en contacto con nuestro equipo de soporte al cliente a
+          través de múltiples canales. Para asistencia inmediata, puedes llamarnos
+          a nuestra línea de soporte dedicada. Alternativamente, puedes enviarnos un
+          correo electrónico o utilizar el formulario de contacto en nuestro sitio web.
+          Nuestro equipo de soporte está disponible de lunes a viernes, de 9 AM a 6 PM
+          hora en Japón, para atender tus consultas.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How can I track the status of my car shipment?
+          ¿Cómo puedo hacer un seguimiento del estado de mi envío de automóvil?
         </h2>
         <p>
-          Once your car has been shipped, we will provide you with the shipping documentation and the estimated arrival date. You can track the status of your car through various applications and the shipping company's website. Please note that while we provide an estimated arrival date, there may be delays due to weather conditions or other unforeseen incidents. If you have any questions or concerns about your shipment, please contact our support team for further assistance.
+          Una vez que tu automóvil haya sido enviado, te proporcionaremos la
+          documentación de envío y la fecha estimada de llegada. Puedes hacer un
+          seguimiento del estado de tu automóvil a través de varias aplicaciones y
+          el sitio web de la empresa de envíos. Ten en cuenta que, aunque proporcionamos
+          una fecha estimada de llegada, pueden ocurrir retrasos debido a condiciones
+          meteorológicas u otros incidentes imprevistos. Si tienes alguna pregunta o
+          inquietud acerca de tu envío, por favor contacta a nuestro equipo de soporte
+          para obtener más ayuda.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Do you offer vehicle inspections?
+          ¿Ofrecen inspecciones de vehículos?
         </h2>
         <p>
-          Yes, we offer optional vehicle inspections after purchase. This service allows you to have peace of mind by ensuring the condition of your vehicle. Our team will provide you with detailed information about the inspection process and any associated costs. Please let us know if you are interested in this service when you inquire about a car.
+          Sí, ofrecemos inspecciones opcionales de vehículos después de la compra.
+          Este servicio te permite tener tranquilidad al asegurarte del estado de tu
+          vehículo. Nuestro equipo te proporcionará información detallada sobre el
+          proceso de inspección y los costos asociados. Por favor, háznoslo saber si
+          estás interesado en este servicio cuando consultes sobre un automóvil.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          What are the payment options available?
+          ¿Cuáles son las opciones de pago disponibles?
         </h2>
         <p>
-          We offer a variety of payment options to make the purchasing process convenient for you. You can pay via bank transfer, credit card, or other secure methods. Our sales team will provide you with all the necessary details to complete your payment. If you have any questions regarding payment methods, please do not hesitate to contact us.
+          En Retro Games Japan, ofrecemos varios métodos de pago seguros y convenientes para que puedas realizar tu compra sin inconvenientes. Puedes elegir entre las siguientes opciones:
         </p>
-      </div>
-
-      <div className='mb-6'>
-        <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How can I contact customer support for additional information?
-        </h2>
+        <ul className='list-disc pl-6'>
+          <li>
+            <strong className='text-pink-600'>Transferencia Bancaria:</strong> Realiza el pago directamente desde tu cuenta bancaria. Te proporcionaremos los detalles necesarios para completar la transferencia de manera segura.
+          </li>
+          <li>
+            <strong className='text-pink-600'>Wise:</strong> Utiliza Wise para realizar pagos internacionales de forma rápida y con tasas de cambio competitivas.
+          </li>
+          <li>
+            <strong className='text-pink-600'>PayPal:</strong> Utiliza tu cuenta de PayPal para realizar el pago de manera rápida y segura. Puedes usar tu saldo de PayPal o vincular tu cuenta bancaria para completar el pago.
+          </li>
+        </ul>
         <p>
-          Our customer support team is available to assist you with any questions or concerns you may have. You can reach us by phone, email, or through our website's contact form. We strive to respond to all inquiries as quickly as possible. Additionally, you can visit our support page for helpful resources and answers to common questions.
+          Si tienes alguna pregunta sobre las opciones de pago o necesitas asistencia, no dudes en ponerte en contacto con nuestro equipo de soporte. ¡Estamos aquí para ayudarte!
         </p>
       </div>
     </div>
@@ -67,5 +84,9 @@ const Support = () => {
 };
 
 export default Support;
+
+
+
+
 
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FAQs = () => {
   return (
     <div className='container mt-36 mx-auto px-10 py-10 text-gray-300'>
@@ -11,74 +9,75 @@ const FAQs = () => {
           WebkitTextStroke: '1px rgba(0,0,0,0.8)',
         }}
       >
-        Frequently Asked Questions
+        Preguntas Frecuentes
       </h1>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          What types of cars do you offer?
+          ¿Qué tipos de juegos y consolas ofrecen?
         </h2>
         <p>
-          We offer a wide variety of Japanese cars, ranging from classic models
-          to modern high-performance vehicles. Our selection includes well-known
-          brands like Toyota, Nissan, Honda, Subaru, and more. Whether you're
-          looking for a reliable daily driver or a rare collectible, we have
-          options to suit every need and preference.
+          Ofrecemos una amplia variedad de juegos y consolas retro, desde
+          modelos clásicos hasta ediciones raras. Nuestra selección incluye
+          marcas bien conocidas como Nintendo, Sega, PlayStation, y más. Ya sea
+          que busques una consola de tu infancia o un juego difícil de
+          encontrar, tenemos opciones para todos los gustos y necesidades.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How can I purchase a car?
+          ¿Cómo puedo comprar un juego o consola?
         </h2>
         <p>
-          To purchase a car from JDM Legends, simply browse our online catalog
-          to view the available models. Once you find a car you're interested
-          in, you can contact us directly through our website or by phone. Our
-          team will guide you through the purchasing process, including payment
-          options, necessary documentation, and any additional questions you may
-          have.
+          Para comprar un juego o consola de Retro Games Japan, simplemente
+          navega por nuestro catálogo en línea para ver los modelos disponibles.
+          Una vez que encuentres lo que te interesa, puedes contactarnos
+          directamente a través de nuestro sitio web o por teléfono. Nuestro
+          equipo te guiará a lo largo del proceso de compra, incluyendo opciones
+          de pago, documentación necesaria y cualquier otra pregunta que tengas.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Do you offer shipping and delivery services?
+          ¿Ofrecen servicios de envío y entrega?
         </h2>
         <p>
-          Yes, we offer comprehensive shipping and delivery services to various
-          locations in Europe. Our team handles all aspects of the shipping
-          process, ensuring that your car arrives safely and on time. We provide
-          detailed tracking information and regular updates throughout the
-          shipping process. For more information on shipping rates and delivery
-          times, please contact our support team.
+          Sí, ofrecemos servicios de envío y entrega a diversas ubicaciones en
+          Europa. Nuestro equipo se encarga de todo el proceso de envío,
+          asegurando que tu juego o consola llegue de manera segura y a tiempo.
+          Proporcionamos información detallada de seguimiento y actualizaciones
+          regulares a lo largo del proceso de envío. Para obtener más
+          información sobre tarifas de envío y tiempos de entrega, por favor,
+          contacta con nuestro equipo de soporte.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Do you provide vehicle inspections?
+          ¿Proporcionan inspecciones de los productos?
         </h2>
         <p>
-          We offer optional vehicle inspections after the purchase if the
-          customer desires. This service allows you to have peace of mind by
-          ensuring the condition of your vehicle. Our team will provide you with
-          detailed information about the inspection process and any associated
-          costs. Please let us know if you are interested in this service when
-          you inquire about a car.
+          Ofrecemos inspecciones opcionales de productos después de la compra si
+          el cliente lo desea. Este servicio te permite tener la tranquilidad de
+          conocer el estado de los productos. Nuestro equipo te proporcionará
+          detalles sobre el proceso de inspección y los costos asociados. Por
+          favor, háznoslo saber si estás interesado en este servicio cuando
+          consultes sobre un producto.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How can I contact customer support?
+          ¿Cómo puedo contactar con el soporte al cliente?
         </h2>
         <p>
-          Our customer support team is available to assist you with any
-          questions or concerns you may have. You can reach us by phone, email,
-          or through our website's contact form. We strive to respond to all
-          inquiries as quickly as possible. Additionally, you can visit our
-          support page for helpful resources and answers to common questions.
+          Nuestro equipo de soporte al cliente está disponible para asistirte
+          con cualquier duda o consulta. Puedes ponerte en contacto con nosotros
+          a través de nuestro formulario en línea, por correo electrónico o por
+          teléfono. Estamos aquí para ayudarte con cualquier problema
+          relacionado con tu compra o cualquier otra consulta.
         </p>
       </div>
     </div>

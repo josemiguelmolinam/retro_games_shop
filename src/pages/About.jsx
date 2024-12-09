@@ -1,245 +1,110 @@
-import React from 'react';
-
-import meet from '../../public/logo-bueno.png';
-
-import man from '../assets/images/man.png';
-import woman from '../assets/images/woman.png';
-import woman2 from '../assets/images/woman2.png';
-
+import tiendaretro from '../assets/images/tienda-retro.jpg';
+import teamretrogame from '../assets/images/teamretrogame.jpg';
 const About = () => {
   return (
     <div className='text-white py-[120px]'>
       <div className='container mx-auto px-12'>
         <h1
-          className='text-center text-3xl mb-16 p-4 font-racing py-5 lg:text-4xl font-bold leading-tight'
+          className='text-center md:text-center text-2xl mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
           style={{
-            color: '#03e9f4',
+            color: '#FFC0CB',
             textShadow:
-              '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-            WebkitTextStroke: '1px rgba(0,0,0,0.8)',
+              '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+            WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
+            display: 'inline-block',
+            paddingTop: '10px',
           }}
         >
-          About Us
+          Sobre Nosotros
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
           <div className='about-content'>
             <h2
-              className='text-3xl md:mr-14 text-gray-200 font-racing'
+              className='text-3xl text-center md:mr-14 text-[#00FFFF] font-racing'
               style={{
                 textShadow:
                   '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
                 WebkitTextStroke: '1px rgba(0,0,0,0.8)',
               }}
             >
-              Our History
+              Nuestra Historia
             </h2>
             <p className='text-gray-300 mt-12 leading-7'>
-              From its inception, JDM Legends has been driven by a deep passion
-              for Japanese automotive excellence. Founded with the vision of
-              bringing Japan's iconic automotive culture to enthusiasts
-              worldwide, our journey began with a singular focus to bring the
-              legendary performance and craftsmanship of Japanese cars to a
-              global audience.
+              Desde sus inicios, Retro Games Japan ha sido impulsado por una
+              profunda pasión por los videojuegos clásicos. Fundada con la
+              visión de compartir la icónica cultura gamer japonesa con
+              entusiastas de todo el mundo, nuestra historia comenzó con un
+              enfoque singular: traer lo mejor del gaming retro japonés a una
+              audiencia global.
               <br />
               <br />
-              We have been dedicated to selecting and exporting only the finest
-              vehicles Japan has to offer. Each car we select meets rigorous
-              standards of quality and authenticity, ensuring that every
-              customer receives a vehicle that not only meets expectations but
-              exceeds them. Our commitment to excellence is matched only by our
-              dedication to delivering an exceptional customer experience,
-              making every interaction with JDM Legends memorable and rewarding.
+              Estamos comprometidos a seleccionar y ofrecer solo las consolas y
+              juegos más emblemáticos que Japón tiene para ofrecer. Cada
+              producto cumple con rigurosos estándares de calidad y
+              autenticidad, asegurando que nuestros clientes reciban artículos
+              que no solo cumplan, sino que superen sus expectativas. Nuestra
+              dedicación a la excelencia va de la mano con una atención al
+              cliente excepcional, haciendo que cada interacción con Retro Games
+              Japan sea memorable y satisfactoria.
               <br />
-              <br />
-              As we continue to grow, our mission remains the same: to be the
-              premier destination for enthusiasts seeking the thrill and
-              precision of Japanese automotive engineering.
+              <br />A medida que seguimos creciendo, nuestra misión sigue siendo
+              la misma: ser el destino principal para los amantes de los
+              videojuegos retro que buscan revivir la magia y la nostalgia del
+              gaming clásico japonés.
             </p>
           </div>
           <div className='about-image md:flex md:items-center'>
             <img
-              className='w-full h-auto md:h-[425px] mt-6 rounded-lg object-cover'
-              src='/touge.jpg'
-              alt='Touge image'
+              className='w-[500px] h-auto md:h-[500px] md:ml-[100px] md:w-[550px] mt-6 rounded-lg object-cover'
+              src={tiendaretro}
+              alt='Imagen de tienda de videojuegos retro'
             />
           </div>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-12'>
+        <div className='grid grid-cols-1  md:grid-cols-2 gap-12 mt-12'>
           <div className='about-content'>
             <h2
-              className='text-3xl md:mr-14 text-gray-200 font-racing'
+              className='text-3xl text-center text-[#00FFFF] font-racing'
               style={{
                 textShadow:
                   '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
                 WebkitTextStroke: '1px rgba(0,0,0,0.8)',
               }}
             >
-              Our Vision
+              Nuestro Equipo
             </h2>
             <p className='text-gray-300 mt-12 leading-7'>
-              Our vision is to position ourselves as the global leader in
-              exporting the most iconic Japanese vehicles to Spain and Europe.
-              We see ourselves as pioneers in opening new frontiers for speed
-              and precision enthusiasts, offering exclusive access to an
-              exceptional selection of cars that embody the unique essence of
-              Japanese engineering.
+              En Retro Games Japan, contamos con un equipo apasionado de
+              expertos en videojuegos retro y cultura japonesa,dedicados a
+              ofrecer una experiencia única para todos los amantes del gaming
+              clásico, cada miembro de nuestro equipo comparte una profunda
+              admiración por los juegos retro, lo que nos permite ofrecer un
+              servicio excepcional y personalizado a nuestros clientes.
               <br />
               <br />
-              We are committed not only to meeting but also exceeding our
-              customers' expectations at every step of the way. We aspire to be
-              recognized for our unwavering dedication to quality, authenticity,
-              and exceptional service. Through each transaction, our goal is to
-              transform the experience of acquiring a vehicle into an exciting
-              and rewarding journey that resonates in our customers' memories.
+              Nos enorgullece tener una selección cuidadosamente curada de
+              videojuegos, consolas y artículos coleccionables de distintas
+              épocas, desde los primeros juegos de 8 bits hasta los títulos más
+              icónicos de los 90, además, nos aseguramos de que todos nuestros
+              productos sean auténticos, funcionales y en excelentes
+              condiciones, ya seas un coleccionista
               <br />
               <br />
-              Our vision goes beyond merely selling cars; it is about
-              cultivating a global community of enthusiasts united by their love
-              for Japanese automotive culture, where each vehicle we deliver
-              represents a chapter in the history of innovation and excitement
-              on wheels. At JDM Legends, we are dedicated to leading the way
-              toward a future where excellence and distinction are found in
-              every detail of our legendary Japanese cars.
+              experimentado o alguien que busca revivir los momentos más
+              nostálgicos de su infancia en Retro Games Japan encontrarás lo que
+              buscas, además, ofrecemos asesoramiento experto y un ambiente
+              amigable para que tu experiencia de compra sea aún más especial.
+              ¡Ven a visitarnos y sumérgete en el emocionante mundo del retro
+              gaming!
             </p>
           </div>
           <div className='about-image md:flex md:items-center'>
             <img
-              className='w-full h-auto md:h-[425px] mt-10 rounded-lg object-cover'
-              src='/shutoko.png'
-              alt='Shutoko image'
+              className='w-full h-auto md:h-[500px] md:ml-[100px] md:w-[550px] mt-6 rounded-lg object-cover'
+              src={teamretrogame}
+              alt='Miembro del equipo'
             />
-          </div>
-        </div>
-
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-12'>
-          <div className='about-content'>
-            <h2
-              className='text-3xl md:mr-14 text-gray-200 font-racing'
-              style={{
-                textShadow:
-                  '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-                WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-              }}
-            >
-              Our Values
-            </h2>
-            <p className='text-gray-300 mt-12 leading-7'>
-              <strong className='text-cyan-400'>Passion:</strong> We are driven
-              by a deep passion for Japanese automotive excellence, fueling our
-              commitment to deliver exceptional vehicles and experiences.
-              <br />
-              <br />
-              <strong className='text-cyan-400'>Integrity:</strong> We uphold
-              the highest standards of honesty, transparency, and ethical
-              conduct in all our operations, ensuring trust and satisfaction
-              among our customers and partners.
-              <br />
-              <br />
-              <strong className='text-cyan-400'>Quality:</strong> We
-              meticulously select and deliver only the finest Japanese
-              automobiles, maintaining unwavering standards of quality and
-              authenticity.
-              <br />
-              <br />
-              <strong className='text-cyan-400'>Innovation:</strong> We embrace
-              innovation in every aspect of our business, constantly seeking new
-              ways to enhance our services and exceed expectations.
-              <br />
-              <br />
-              <strong className='text-cyan-400'>Customer Focus:</strong> Our
-              customers are at the heart of everything we do. We strive to
-              provide personalized service and build lasting relationships based
-              on trust and satisfaction.
-              <br />
-              <br />
-              <strong className='text-cyan-400'>Community:</strong> We foster a
-              community of enthusiasts united by their passion for Japanese
-              automotive culture, promoting collaboration and mutual
-              appreciation.
-              <br />
-              <br />
-              These values embody our commitment to excellence and guide our
-              mission to redefine the experience of importing and owning
-              legendary Japanese automobiles.
-            </p>
-          </div>
-          <div className='about-image md:flex md:items-center'>
-            <img
-              className='w-full h-auto md:ml-[130px] md:mt-24 md:h-[430px] md:w-[500px] rounded-lg object-cover'
-              src={meet}
-              alt='Our Values'
-            />
-          </div>
-        </div>
-
-        <div className='team-section mt-24'>
-          <h2
-            className='text-center text-4xl mb-24 p-4 font-racing py-5 lg:text-4xl font-bold leading-tight'
-            style={{
-              color: '#03e9f4',
-              textShadow:
-                '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-              WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-            }}
-          >
-            Our Team
-          </h2>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
-            <div className='team-member text-center'>
-              <img
-                src={man}
-                alt='Team Member'
-                className='w-32 h-32 mx-auto rounded-full mb-4'
-              />
-              <h2
-                className='text-2xl p-4 text-gray-200 font-racing'
-                style={{
-                  textShadow:
-                    '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-                  WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-                }}
-              >
-                Jose M. Molina
-              </h2>
-              <p className='text-gray-400'>CEO</p>
-            </div>
-            <div className='team-member text-center'>
-              <img
-                src={woman}
-                alt='Team Member'
-                className='w-32 h-32 mx-auto rounded-full mb-4'
-              />
-              <h2
-                className='text-2xl p-4 text-gray-200 font-racing'
-                style={{
-                  textShadow:
-                    '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-                  WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-                }}
-              >
-                Jane Smith
-              </h2>
-              <p className='text-gray-400'>CTO</p>
-            </div>
-            <div className='team-member text-center'>
-              <img
-                src={woman2}
-                alt='Team Member'
-                className='w-32 h-32 mx-auto rounded-full mb-4'
-              />
-              <h2
-                className='text-2xl  p-4 text-gray-200 font-racing'
-                style={{
-                  textShadow:
-                    '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-                  WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-                }}
-              >
-                Alice Johnsom
-              </h2>
-              <p className='text-gray-400'>CFO</p>
-            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PrivacyPolicy = () => {
   return (
     <div className='container mx-auto mt-24 px-10 py-10 text-gray-300'>
@@ -11,112 +9,72 @@ const PrivacyPolicy = () => {
           WebkitTextStroke: '1px rgba(0,0,0,0.8)',
         }}
       >
-        Privacy Policy
+        Política de Privacidad
       </h1>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Introduction
+          Introducción
         </h2>
         <p>
-          At JDM Legends, we are committed to protecting your privacy. This
-          Privacy Policy explains how we collect, use, and safeguard your
-          personal information when you visit our website or make a purchase
-          from us. By using our website, you agree to the terms of this policy.
+          En Retro Games Japan, nos comprometemos a proteger tu privacidad. Esta
+          Política de Privacidad explica cómo recopilamos, usamos y protegemos tu
+          información personal cuando visitas nuestro sitio web o realizas una
+          compra con nosotros. Al utilizar nuestro sitio web, aceptas los términos
+          de esta política.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Information We Collect
+          Información que Recopilamos
         </h2>
         <p>
-          We collect information that you provide to us directly, such as when
-          you create an account, make a purchase, or contact our support team.
-          This information may include your name, email address, phone number,
-          shipping address, and payment details. We also collect information
-          about your use of our website, including your IP address, browser
-          type, and browsing behavior.
+          Recopilamos la información que nos proporcionas directamente, como cuando
+          creas una cuenta, realizas una compra o contactas a nuestro equipo de
+          soporte. Esta información puede incluir tu nombre, dirección de correo
+          electrónico, número de teléfono, dirección de envío y detalles de pago.
+          También recopilamos información sobre tu uso de nuestro sitio web, como
+          tu dirección IP, tipo de navegador y comportamiento de navegación.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How We Use Your Information
+          Cómo Usamos Tu Información
         </h2>
         <p>
-          We use your information to process your orders, provide customer
-          support, and improve our services. This includes using your
-          information to communicate with you about your orders, respond to your
-          inquiries, and send you updates and promotional offers. We may also
-          use your information to analyze website usage and improve our
-          website's functionality and user experience.
+          Usamos tu información para procesar tus pedidos, proporcionar soporte al
+          cliente y mejorar nuestros servicios. Esto incluye usar tu información
+          para comunicarte sobre tus pedidos, responder a tus consultas y enviarte
+          actualizaciones y ofertas promocionales. También podemos utilizar tu
+          información para analizar el uso del sitio web y mejorar la funcionalidad
+          de nuestro sitio web y la experiencia del usuario.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          How We Share Your Information
+          Cómo Compartimos Tu Información
         </h2>
         <p>
-          We do not sell or rent your personal information to third parties. We
-          may share your information with trusted service providers who assist
-          us in operating our business and providing services to you. These
-          service providers are contractually obligated to protect your
-          information and use it only for the purposes for which it was
-          disclosed. We may also disclose your information if required by law or
-          to protect our rights and property.
+          No vendemos ni alquilamos tu información personal a terceros. Podemos
+          compartir tu información con proveedores de servicios de confianza que
+          nos ayudan a operar nuestro negocio y proporcionar servicios. Estos
+          proveedores están contractualmente obligados a proteger tu información y
+          usarla solo para los fines para los que fue divulgada. También podemos
+          divulgar tu información si lo exige la ley o para proteger nuestros
+          derechos y propiedad.
         </p>
       </div>
 
       <div className='mb-6'>
         <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Your Choices
+          Tus Opciones
         </h2>
         <p>
-          You have the right to access, update, and delete your personal
-          information. You can do this by logging into your account on our
-          website or by contacting our support team. You can also choose to
-          opt-out of receiving promotional emails from us by following the
-          unsubscribe instructions in the emails. Please note that even if you
-          opt-out of receiving promotional emails, we may still send you
-          transactional emails related to your orders and account.
-        </p>
-      </div>
-
-      <div className='mb-6'>
-        <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>Security</h2>
-        <p>
-          We take the security of your personal information seriously and
-          implement appropriate measures to protect it from unauthorized access,
-          disclosure, alteration, and destruction. However, please be aware that
-          no security measures are perfect or impenetrable, and we cannot
-          guarantee the absolute security of your information.
-        </p>
-      </div>
-
-      <div className='mb-6'>
-        <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>
-          Changes to This Policy
-        </h2>
-        <p>
-          We may update this Privacy Policy from time to time to reflect changes
-          in our practices or legal requirements. We will notify you of any
-          significant changes by posting the updated policy on our website and
-          indicating the date of the latest revision. Your continued use of our
-          website after the posting of changes constitutes your acceptance of
-          the updated policy.
-        </p>
-      </div>
-
-      <div className='mb-6'>
-        <h2 className='text-xl text-cyan-400 mb-6 font-semibold'>Contact Us</h2>
-        <p>
-          If you have any questions or concerns about this Privacy Policy or our
-          privacy practices, please contact us at{' '}
-          <span className='text-cyan-400'>jdmlegendsimports@gmail.com</span> We
-          will respond to your inquiries promptly and work with you to address
-          any concerns you may have.
+          Tienes el derecho de acceder, actualizar y eliminar tu información
+          personal. Puedes hacerlo iniciando sesión en tu cuenta...
         </p>
       </div>
     </div>
@@ -124,3 +82,4 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+

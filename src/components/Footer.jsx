@@ -1,113 +1,108 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-  FaInstagram,
-  FaYoutube,
-} from 'react-icons/fa';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-
 
 const Footer = () => {
   return (
-    <footer
-      className='bg-transparent text-white py-12 border-t border-gray-700/50 md:mt-32 lg:mt-32 xl:mt-40'
-      style={{
-        backgroundImage: `url('./assets/images/background.jpg')`,
-        backgroundSize: 'cover',
-        backgroundBlendMode: 'multiply',
-      }}
-    >
-      <div className='container mx-auto px-4'>
-        <div className='grid grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-4 gap-8'>
+    <footer className='footer-background text-white py-12'>
+      <div className='footer-stars'></div>
+
+      <div className='footer-content container mx-auto px-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center'>
           <div>
-            <h3 className='font-bold text-gray-300 text-lg mb-4'>About Us</h3>
-            <p className=' text-center text-gray-300'>
-              Explore the Endless Excellence of Japanese Cars with JDM Legends
+            <h3 className='font-retro text-sm mb-4 text-[#00FFFF] font-pixel'>
+              Sobre Nosotros
+            </h3>
+            <p className='text-gray-300 font-pixel text-sm'>
+              Descubre juegos y consolas retro raros directamente desde Japón.
             </p>
           </div>
+
           <div>
-            <h3 className='font-bold text-gray-200 text-lg mb-4'>
-              Quick Links
+            <h3 className='font-retro text-sm mb-4 text-[#00FFFF] font-pixel'>
+              Enlaces Rápidos
             </h3>
             <ul className='space-y-2'>
               <li>
-                <Link to='/home' className='link font-racing'>
-                  Home
+                <Link to='/home' className='link'>
+                  Inicio
                 </Link>
               </li>
               <li>
-                <Link to='/services' className='link font-racing'>
-                  Services
+                <Link to='/games' className='link'>
+                  Juegos
                 </Link>
               </li>
               <li>
-                <Link to='/contact' className='link font-racing'>
-                  Contact
+                <Link to='/about' className='link'>
+                  Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link to='/about' className='link font-racing'>
-                  About Us
+                <Link to='/contact' className='link'>
+                  Contacto
                 </Link>
               </li>
             </ul>
           </div>
+
           <div>
-            <h3 className='font-bold text-gray-200 text-lg mb-4'>Resources</h3>
-            <ul className='text-gray-400 space-y-2'>
+            <h3 className='font-retro text-sm mb-4 text-[#00FFFF] font-pixel'>
+              Más Enlaces
+            </h3>
+            <ul className='space-y-2'>
               <li>
-                <Link to='/faqs' className='link font-racing'>
-                  FAQs
+                <Link to='/faq' className='link'>
+                  Preguntas Frecuentes
                 </Link>
               </li>
               <li>
-                <Link to='/support' className='link font-racing'>
-                  Support
+                <Link to='/privacy-policy' className='link'>
+                  Política de Privacidad
                 </Link>
               </li>
               <li>
-                <Link to='/privacy-policy' className='link font-racing'>
-                  Privacy Policy
+                <Link to='/support' className='link'>
+                  Soporte
                 </Link>
               </li>
             </ul>
           </div>
+
           <div>
-            <h3 className='font-bold text-gray-200 text-lg mb-4'>Contact Us</h3>
-            <p className='text-gray-300'>Tokyo, Japan</p>
-            <p className='text-gray-300'>Email: jdmlegendsimports@gmail.com</p>
-            <p className='text-gray-300'>Phone: (123) 456-7890</p>
+            <h3 className='font-retro text-sm mb-4 text-[#00FFFF] font-pixel'>
+              Síguenos
+            </h3>
+            <div className='flex justify-center space-x-6'>
+              <a
+                href='https://x.com/RetroGames'
+                className='social-link text-xl'
+                aria-label='Twitter'
+              >
+                <FaXTwitter />
+              </a>
+              <a
+                href='https://www.instagram.com/RetroGamesJapan/'
+                className='social-link text-xl'
+                aria-label='Instagram'
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href='https://www.youtube.com/RetroGamesJapan'
+                className='social-link text-xl'
+                aria-label='YouTube'
+              >
+                <FaYoutube />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className='flex justify-center md:mt-30 md:ml-[1150px] mt-8 space-x-6'>
-      
-          <a
-            href='https://x.com/JDMLegendsCars'
-            aria-label='Twitter'
-            className='social-link'
-          >
-            <FaXTwitter size={24} />
-          </a>
-          <a
-            href='https://www.instagram.com/jdmlegendsimports/'
-            aria-label='Instagram'
-            className='social-link'
-          >
-            <FaInstagram size={24} />
-          </a>
-          <a
-            href='https://www.youtube.com/@JDMLegendsImports'
-            aria-label='YouTube'
-            className='social-link'
-          >
-            <FaYoutube size={24} />
-          </a>
-        </div>
-
-        <div className='mt-8 border-t border-gray-700 pt-6 text-center'>
-          <p className='text-gray-300'>
-            © 2024 JDM Legends. All rights reserved.
+        <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm'>
+          <p className='text-gray-400'>
+            © {new Date().getFullYear()} Retro Games Japan. Todos los derechos
+            reservados.
           </p>
         </div>
       </div>
@@ -116,4 +111,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

@@ -7,42 +7,54 @@
 
     <meta
       property="og:title"
-      content="JDM Legends - Explore the Legacy of Classic Japanese Cars"
+      content="Retro Games Japan - Explore Rare and Classic Video Games"
     />
     <meta
       property="og:description"
-      content="Welcome to JDM Legends, where we specialize in exporting classic Japanese vehicles. Discover unique, high-quality cars and join our community of passionate car enthusiasts."
+      content="Welcome to Retro Games Japan, your destination for rare and classic video games, consoles, and exclusive collectibles from Japan. Perfect for retro gaming enthusiasts!"
     />
     <meta
       property="og:image"
-      content="https://res.cloudinary.com/dau7gjtah/image/upload/c_fit,w_800,h_600,q_80,f_auto/v1725427087/lTzczZD_soz0cb.png"
+      content="https://res.cloudinary.com/dau7gjtah/image/upload/c_fit,w_800,h_600,q_80,f_auto/v1725427087/retro_games_image.png"
     />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="JDM Legends - Explore the Legacy of Classic Japanese Cars"
+      content="Retro Games Japan - Explore Rare and Classic Video Games"
     />
     <meta
       name="twitter:description"
-      content="Welcome to JDM Legends, where we specialize in exporting classic Japanese vehicles. Discover unique, high-quality cars and join our community of passionate car enthusiasts."
+      content="Welcome to Retro Games Japan, your destination for rare and classic video games, consoles, and exclusive collectibles from Japan. Perfect for retro gaming enthusiasts!"
     />
     <meta
       name="twitter:image"
-      content="https://res.cloudinary.com/dau7gjtah/image/upload/c_fit,w_800,h_600,q_80,f_auto/v1725427087/lTzczZD_soz0cb.png"
+      content="https://res.cloudinary.com/dau7gjtah/image/upload/c_fit,w_800,h_600,q_80,f_auto/v1725427087/retro_games_image.png"
     />
 
-    <title>JDM Legends</title>
+    <title>🎮 Retro Games Japan 🕹️</title>
+
     <link
-      rel="icon"
-      href="/public/apple-icon-180x180.png"
+      rel="shortcut icon"
+      href="/PATH_TO_STATIC_FAVICON/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="icon" href="/pacman.ico" type="image/x-icon" />
+
     <link href="/src/index.css" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      let toggle = true;
+      setInterval(() => {
+        document.title = toggle
+          ? '🎮 Retro Games Japan 🕹️'
+          : '🕹️ Retro Games Japan 🎮';
+        toggle = !toggle;
+      }, 1000);
+    </script>
   </body>
 </html>

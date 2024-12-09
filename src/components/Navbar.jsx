@@ -1,163 +1,131 @@
-import  { useState, useRef, useEffect } from 'react';
-import logo from '../assets/logo-web.svg';
+import { useState, useRef, useEffect } from 'react';
+import logo from '../assets/images/retro.gif';
 import { Link } from 'react-router-dom';
 import { useClickAway } from 'react-use';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Twirl as Hamburger } from 'hamburger-react';
-import PropTypes from 'prop-types';
+import fondomovilmario from '../assets/images/fondomovilmario.jpg';
 
 const Navbar = () => {
-const [menuOpen, setMenuOpen] = useState(false);
-const [lastScrollTop, setLastScrollTop] = useState(0);
-const [scrollDirection, setScrollDirection] = useState('down');
-const [navbarVisible, setNavbarVisible] = useState(true);
-const ref = useRef(null);
-useClickAway(ref, () => setMenuOpen(false));
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState('down');
+  const [navbarVisible, setNavbarVisible] = useState(true);
+  const ref = useRef(null);
+  useClickAway(ref, () => setMenuOpen(true));
 
-useEffect(() => {
-const handleScroll = () => {
-const currentScrollTop = window.scrollY;
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
 
-if (currentScrollTop > lastScrollTop) {
-setScrollDirection('up');
-} else {
-setScrollDirection('down');
-}
+      if (currentScrollTop > lastScrollTop) {
+        setScrollDirection('up');
+      } else {
+        setScrollDirection('down');
+      }
 
-if (currentScrollTop < 80 || scrollDirection === 'down') {
+      if (currentScrollTop < 80 || scrollDirection === 'down') {
+        setNavbarVisible(true);
+      } else {
+        setNavbarVisible(false);
+      }
 
-setNavbarVisible(true);
-} else {
-setNavbarVisible(false);
-}
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+    };
 
-setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
-};
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollTop, scrollDirection]);
 
-window.addEventListener('scroll', handleScroll);
-return () => window.removeEventListener('scroll', handleScroll);
-}, [lastScrollTop, scrollDirection]);
+  const NavLink = ({ to, children }) => (
+    <Link
+      to={to}
+      className='nav-link text-sm md:text-sm font-pixel hover:text-rose-500 transition-all duration-300 ease-in-out mx-3'
+      onClick={() => setMenuOpen(false)}
+    >
+      {children}
+    </Link>
+  );
 
+  const handleMenuToggle = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
 
-const NavLink = ({ to, children }) => (
-<Link
-to={to}
-className='nav-link text-xl font-racing btn'
-onClick={() => setMenuOpen(false)}
->
-<span className='inline ml-1'>{children}</span>
-</Link>
-);
+  return (
+    <motion.header
+      initial={{ y: 0 }}
+      animate={{ y: navbarVisible ? 0 : '-100%' }}
+      transition={{ duration: 0.3 }}
+      className='fixed w-full z-20 py-2'
+      style={{
+        backgroundImage: 'linear-gradient(90deg, #FF1493, #1E90FF)',
+        backgroundSize: '200% 200%',
+        animation: 'gradientAnimation 6s ease infinite',
+        boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
+      }}
+    >
+      <nav className='container flex justify-between items-center'>
+        <div className='flex items-center gap-4 ml-4'>
+          <Link to='/home' className='flex items-center gap-4'>
+            <img
+              src={logo}
+              alt='Retro Games Japan'
+              className='h-[60px] md:h-[65px] mr-[15px]'
+            />
+            <span
+              className='font-racing text-[23px] mr-[15px] md:text-[30px] text-[#00FFFF]'
+              style={{
+                textShadow:
+                  '2px 2px 4px rgba(0, 0, 0, 0.8), 0 4px 6px rgba(0, 255, 255, 0.7)',
+              }}
+            >
+              Retro Games Japan
+            </span>
+          </Link>
+        </div>
 
-const handleMenuToggle = () => {
-setMenuOpen(prevState => !prevState);
-};
+        <div className='hidden md:flex gap-8 items-center'>
+          <NavLink to='/home'>Inicio</NavLink>
+          <NavLink to='/games'>Juegos</NavLink>
+          <NavLink to='/about'>Team</NavLink>
+          <NavLink to='/contact'>Contacto</NavLink>
+        </div>
 
-return (
-<motion.header
-initial={{ y: 0 }}
-animate={{ y: navbarVisible ? 0 : '-100%' }}
-transition={{ duration: 0.3 }}
-className='fixed w-full z-20 border-b border-gray-700/50 py-2'
-style={{
-backgroundImage: 'url(/assets/images/background.jpg)',
-backgroundColor: '#052148' ,
-backgroundSize: 'cover',
-backgroundBlendMode: 'multiply',
-}}
->
-<nav className='container flex justify-between items-center '>
-<div className='flex items-center gap-2'>
-<Link to='/home'>
-<img src={logo} alt='logo' className='h-[75px] ml-10 md:ml-44' />
-</Link>
-</div>
-<div
-className='hidden md:flex items-center ml-12 gap-7'
-style={{
-color: '#03e9f4',
-textShadow:
-'0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-WebkitTextStroke: '1px rgba(0,0,0,0.7)',
-}}
->
-<NavLink to='/home'>Home</NavLink>
-<NavLink to='/cars'>Cars</NavLink>
-<NavLink to='/services'>Services</NavLink>
-<NavLink to='/about'>About Us</NavLink>
-<NavLink to='/contact'>Contact</NavLink>
-<div className='relative'>
-<button className='flex font-racing items-center mt-1 justify-center text-xl rounded-full btn'></button>
-</div>
-</div>
-
-<div className='md:hidden flex items-center mr-4'>
-<Hamburger
-toggled={menuOpen}
-toggle={handleMenuToggle}
-size={28}
-color='#03e9f4'
-duration={0.28}
-/>
-</div>
-</nav>
-<AnimatePresence>{menuOpen && <NavMobile setMenuOpen={setMenuOpen} />}</AnimatePresence>
-</motion.header>
-);
-};
-
-const NavMobile = ({ setMenuOpen }) => {
-const ref = useRef(null);
-useClickAway(ref, () => setMenuOpen(true));
-
-const NavLinkMobile = ({ to, text }) => (
-<li
-className='w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-350 to-neutral-500 hover:text-cyan-500'
-style={{
-backgroundColor: 'rgba(30, 41, 59, 0.8)',
-backdropFilter: 'blur(10px) saturate(180%)',
-}}
->
-<Link
-to={to}
-className='flex items-center justify-between w-full p-5 rounded-xl bg-slate-900 bg-opacity-75 font-racing btn'
-onClick={() => setMenuOpen(false)}
->
-<span className='flex gap-1 text-xl'>{text}</span>
-</Link>
-</li>
-);
-
-return (
-<motion.div
-ref={ref}
-initial={{ opacity: 0 }}
-animate={{ opacity: 1 }}
-exit={{ opacity: 0 }}
-transition={{ duration: 0.2 }}
-className='fixed left-0 right-0 top-[5rem] p-5 pt-0 bg-[#132c57] bg-opacity-100 border-b border-b-white/20 lg:hidden'
-style={{
-color: '#03e9f4',
-textShadow: '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-WebkitTextStroke: '1px rgba(0,0,0,0.7)',
-}}
->
-<ul className='grid gap-2 mt-5'>
-<NavLinkMobile to='/home' text='Home' />
-<NavLinkMobile to='/cars' text='Cars' />
-<NavLinkMobile to='/services' text='Services' />
-<NavLinkMobile to='/about' text='About Us' />
-<NavLinkMobile to='/contact' text='Contact' />
-</ul>
-</motion.div>
-);
-};
-
-NavMobile.propTypes = {
-setMenuOpen: PropTypes.func.isRequired,
-to: PropTypes.string.isRequired,
-text: PropTypes.string.isRequired,
-children: PropTypes.node.isRequired,
+        <div className='mr-2 md:hidden'>
+          <Hamburger
+            toggled={menuOpen}
+            toggle={handleMenuToggle}
+            size={28}
+            color='#39ff14'
+            className='hover:text-[#39ff14] transition-all duration-300'
+          />
+          <AnimatePresence>
+            {menuOpen && (
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0, x: 200 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 200 }}
+                transition={{ type: 'spring', stiffness: 150, damping: 25 }}
+                className='fixed top-[66px] right-0 w-full h-screen flex flex-col items-center justify-center text-white text-2xl z-30'
+                style={{
+                  backgroundImage: `url(${fondomovilmario})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <NavLink to='/home'>Inicio</NavLink>
+                <NavLink to='/games'>Juegos</NavLink>
+                <NavLink to='/about'>Team</NavLink>
+                <NavLink to='/contact'>Contacto</NavLink>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </nav>
+    </motion.header>
+  );
 };
 
 export default Navbar;

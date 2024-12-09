@@ -1,55 +1,103 @@
-import React from 'react';
-import img from '../../../../public/jdmlegend.jpg';
+import all from '../../../assets/images/mariosonic.png';
+import mando from '../../../assets/images/mando.png';
+import garantia from '../../../assets/images/foto-garantia.jpg';
 
-const OurMission = () => {
+const NuestraMision = () => {
   return (
     <div className='container text-center mt-28 mx-auto'>
       <h1
-        className='text-center md:text-center text-3xl mb-8 font-racing py-5 lg:text-4xl font-bold leading-tight'
+        className='text-center md:text-center text-[20px] mb-12 font-pixel py-5 lg:text-2xl font-retro leading-tight'
         style={{
-          color: '#03e9f4',
+          color: '#FFC0CB',
           textShadow:
-            '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-          WebkitTextStroke: '1px rgba(0,0,0,0.8)',
+            '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+          WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
           display: 'inline-block',
           paddingTop: '10px',
         }}
       >
-        Our Mission
+        Nuestra Misión
       </h1>
 
-      <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-10 py-5'>
-        <img
-          className='w-full md:mt-14 max-w-sm md:max-w-xl lg:max-w-2xl rounded-lg'
- 
-          src={img}
-          alt='img'
-        />
-        <div className='text-center md:mt-8 md:ml-14 md:text-left md:w-1/3'>
-          {' '}
-          <h1
-            className='font-racing px-8 md:px-6 text-gray-200 p-4 mt-4 text-2xl lg:text-3xl py-3'
+      <div className='flex flex-col md:flex-row justify-center items-center gap-8 mb-24 pt-10'>
+        <div className='text-center mb-4'>
+          <img
+            className='h-[50-px] w-[550px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[500px] rounded-lg mb-4 mx-auto'
+            src={all}
+            alt='Retro Games Japan'
+          />
+          <h2
+            className='text-[15px] font-retro text-[#00FFFF] mb-3'
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+            }}
+          >
+            Juegos Clásicos
+          </h2>
+          <p
+            className='text-gray-100 p-6 text-sm lg:text-base'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-              WebkitTextStroke: '1px rgba(0,0,0,0.5)',
-              display: 'inline-block',
+              WebkitTextStroke: '1px rgba(0, 0, 0, 0.1)',
             }}
           >
-            To create a community where every journey is extraordinary
-          </h1>
-          <p className='mb-4 p-6 px-8 md:px-6 text-gray-300 text-sm lg:text-base md:text-left md:mr-8 md:mb-12'>
-            <span className='block mb-8'>
-              At JDM Legends, our mission is to share the passion and excellence
-              of Japanese cars with the world. We aim to provide our customers
-              with access to unique, high-quality vehicles that redefine the
-              driving experience.
-            </span>
-            <span className='block'>
-              We are dedicated to ensuring that every car we import and export
-              meets the highest standards of quality and authenticity, so that
-              every journey becomes a memorable experience.
-            </span>
+            Disfruta de una amplia selección de videojuegos clásicos,
+            cuidadosamente seleccionados y traídos directamente desde Japón.
+          </p>
+        </div>
+
+        <div className='text-center mb-4'>
+          <img
+            className='h-[300px] w-[300px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px] rounded-lg mb-4 mx-auto'
+            src={mando}
+            alt='Retro Games Japan'
+          />
+          <h2
+            className='text-[15px] font-retro text-[#00FFFF] mb-3'
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+            }}
+          >
+            Consolas Originales
+          </h2>
+          <p
+            className='text-gray-100 p-6 text-sm lg:text-base'
+            style={{
+              textShadow:
+                '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
+              WebkitTextStroke: '1px rgba(0, 0, 0, 0.1)',
+            }}
+          >
+            Ofrecemos consolas originales retro en excelente estado. Vive la
+            nostalgia con hardware auténtico y funcional.
+          </p>
+        </div>
+
+        <div className='text-center mb-4'>
+          <img
+            className='h-[300px] w-[300px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px] rounded-lg mb-4 mx-auto'
+            src={garantia}
+            alt='Retro Games Japan'
+          />
+          <h2
+            className='text-[15px] font-retro text-[#00FFFF] mb-3'
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+            }}
+          >
+            Calidad Garantizada
+          </h2>
+          <p
+            className='text-gray-100 text-sm p-6 lg:text-base'
+            style={{
+              textShadow:
+                '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
+              WebkitTextStroke: '1px rgba(0, 0, 0, 0.1)',
+            }}
+          >
+            Garantizamos que todos los productos son revisados y probados para
+            que disfrutes de una experiencia de juego perfecta.
           </p>
         </div>
       </div>
@@ -57,4 +105,4 @@ const OurMission = () => {
   );
 };
 
-export default OurMission;
+export default NuestraMision;

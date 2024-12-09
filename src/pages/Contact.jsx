@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
@@ -24,8 +24,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_zvxim8a',
-        'template_ujvea5c',
+        'service_5x0w2uf',
+        'template_fgyl73o',
         data,
         '73Ua-iCNYBoRywSyJ'
       );
@@ -62,32 +62,30 @@ const Contact = () => {
   return (
     <div className='mx-auto mt-[110px] md:mt-[145px] py-6 rounded-xl my-12 p-9 text-white md:max-w-7xl'>
       <h1
-        className='text-center md:text-center text-3xl mb-4 font-racing py-5 lg:text-4xl font-bold leading-tight'
+        className='ml-24 md:text-center text-[20px] mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
         style={{
-          color: '#03e9f4',
+          color: '#FFC0CB',
           textShadow:
-            '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-          WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-          paddingBottom: '10px',
+            '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+          WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
+          display: 'inline-block',
+          paddingTop: '10px',
         }}
       >
-        Contact Us
+        Contacto
       </h1>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:mt-[50px]'>
-        <div
-          className='form-container bg-slate-800 p-8 rounded-lg shadow-md'
-          style={{ border: '1px solid #03e9f4' }}
-        >
+        <div className='form-container bg-gradient-to-br from-pink-700 via-blue-700 to-purple-800 p-8 rounded-lg shadow-lg border-2 border-cyan-400 hover:border-pink-400 transition-all duration-300 animate-led-border'>
           <h2
             className='text-2xl font-racing mb-6'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-              WebkitTextStroke: '1px rgba(0,0,0,0.8)',
+              WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
             }}
           >
-            Connect with Our Team
+            Conéctate con nuestro equipo
           </h2>
 
           <form
@@ -108,16 +106,18 @@ const Contact = () => {
 
             <div>
               <label htmlFor='name' className='block text-gray-300 mb-1'>
-                Name
+                Nombre
               </label>
               <input
                 type='text'
                 id='name'
-                className='w-full p-2 border border-gray-300 rounded bg-slate-700 text-white'
+                className='w-full p-3 border border-gray-600 rounded bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400'
                 {...register('name', { required: true })}
               />
               {errors.name && (
-                <p className='text-red-500 text-sm'>This field is required</p>
+                <p className='text-red-500 text-sm'>
+                  Este campo es obligatorio
+                </p>
               )}
             </div>
 
@@ -128,7 +128,7 @@ const Contact = () => {
               <input
                 type='email'
                 id='email'
-                className='w-full p-2 border border-gray-300 rounded bg-slate-700 text-white'
+                className='w-full p-3 border border-gray-600 rounded bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400'
                 {...register('email', { required: true })}
               />
               {errors.email && (
@@ -138,30 +138,34 @@ const Contact = () => {
 
             <div>
               <label htmlFor='subject' className=' text-gray-300 block mb-1'>
-                Subject
+                Asunto
               </label>
               <input
                 type='text'
                 id='subject'
-                className='w-full p-2 border border-gray-300 rounded bg-slate-700 text-white'
+                className='w-full p-3 border border-gray-600 rounded bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400'
                 {...register('subject', { required: true })}
               />
               {errors.subject && (
-                <p className='text-red-500 text-sm'>This field is required</p>
+                <p className='text-red-500 text-sm'>
+                  Este campo es obligatorio
+                </p>
               )}
             </div>
 
             <div>
               <label htmlFor='message' className='text-gray-300 block mb-1'>
-                Message
+                Mensaje
               </label>
               <textarea
                 id='message'
-                className='w-full p-6 border border-gray-300 rounded bg-slate-700 text-white'
+                className='w-full p-4 border border-gray-600 rounded bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400'
                 {...register('message', { required: true })}
               ></textarea>
               {errors.message && (
-                <p className='text-red-500 text-sm'>This field is required</p>
+                <p className='text-red-500 text-sm'>
+                  Este campo es obligatorio
+                </p>
               )}
             </div>
 
@@ -174,7 +178,7 @@ const Contact = () => {
                     height={30}
                     width={30}
                   />
-                  <span className='ml-2'>Sending...</span>
+                  <span className='ml-2'>Enviando...</span>
                 </div>
               ) : (
                 'Send Message'
@@ -196,34 +200,27 @@ const Contact = () => {
               />
               <Marker position={[35.6895, 139.6917]}>
                 <Popup>
-                  <p className='font-racing text-lg'>JDM Legends</p>
+                  <p className='font-racing text-lg'>Retro Games Japan</p>
                 </Popup>
               </Marker>
             </MapContainer>
           </div>
-
-          <div className='contact-info text-center md:text-center md:mr-[85px] mt-7 md:mt-5'>
-            <h3
-              className='text-2xl font-racing mb-5 md:mb-6'
-              style={{
-                color: '#03e9f4',
-                textShadow:
-                  '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-                WebkitTextStroke: '1px rgba(0,0,0,0.8)',
-              }}
-            >
-              Contact Information
+          <div className='contact-info. md:mr-20 text-center mt-12'>
+            <h3 className='text-2xl text-center font-racing text-cyan-300 mb-4'>
+              Información de contacto
             </h3>
-            <p className='md:mb-2 mb-3 text-gray-300'>
-              <strong className='text-cyan-400'>Phone:</strong> (123) 456-7890
+            <p className='text-gray-300 mb-2'>
+              <strong className='text-cyan-400'>Teléfono:</strong> (123)
+              456-7890
             </p>
-            <p className='md:mb-2 mb-3 text-gray-300'>
-              <strong className='text-cyan-400'>Email:</strong>{' '}
-              jdmlegendsimports@gmail.com
+            <p className='text-gray-300 mb-2'>
+              <strong className='text-cyan-400 text-center'>Email:</strong>{' '}
+              retrogamesjapan@gmail.com
             </p>
-            <p className='md:mb-2 mb-3 text-gray-300'>
-    <strong className='text-cyan-400'>Location:</strong> Tokyo, Japan
-  </p>
+            <p className='text-gray-300'>
+              <strong className='text-cyan-400 text-center'>Ubicación:</strong>{' '}
+              Tokio, Japan
+            </p>
           </div>
         </div>
       </div>
