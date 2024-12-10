@@ -93,7 +93,7 @@ const Games = () => {
                     fontSize: '18px',
                     textAlign: 'center',
                     marginBottom: '15px',
-                    textShadow: '0 0 3px rgba(3, 233, 244, 0.7), 0 0 30px rgba(3, 233, 244, 0.6)',
+                    textShadow: '0 0 0px rgba(3, 233, 244, 0.7), 0 0 30px rgba(3, 233, 244, 0.6)',
                   }}
                 >
                   {game.title}
@@ -105,7 +105,7 @@ const Games = () => {
                     color: '#ff00ff', 
                     fontSize: '20px',
                     fontWeight: 'bold',
-                    textShadow: '0 0 3px rgba(254, 0, 238, 0.7)',
+                    textShadow: '0 0 0px rgba(254, 0, 238, 0.7)',
                     marginRight:'15px',
                     marginBottom:'15px',
                   }}
@@ -118,7 +118,7 @@ const Games = () => {
                 color: '#ffd700', 
                 fontSize: '25px',
                 fontWeight: 'bold',
-                textShadow: '0 0 3px rgba(255, 215, 0, 0.6)',
+                textShadow: '0 0 0px rgba(255, 215, 0, 0.6)',
                 marginBottom: '15px',
               }}
             >
