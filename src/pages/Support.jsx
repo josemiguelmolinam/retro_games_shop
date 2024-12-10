@@ -1,14 +1,12 @@
-import React from 'react';
-
 const Support = () => {
   return (
     <div className='container mx-auto mt-36 px-10 py-10 text-gray-300'>
-      <h1
-        className='text-3xl text-gray-200 font-racing mb-16'
+          <h1
+        className="text-center text-[22px] md:text-3xl p-6 font-pixel py-5 font-retro leading-tight mb-12"
         style={{
-          textShadow:
-            '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
-          WebkitTextStroke: '1px rgba(0,0,0,0.8)',
+          color: '#FFC0CB',
+          textShadow: '0 0 1px rgba(255, 192, 203, 0.7), 0 0 1px rgba(255, 105, 180, 0.6)',
+          WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
         }}
       >
         Soporte al Cliente

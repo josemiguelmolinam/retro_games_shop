@@ -22,11 +22,11 @@ const About = () => {
       </button>
       <div className='container mx-auto px-12'>
         <h1
-          className='text-center mt-12 md:mt-24 md:text-center text-2xl mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
+          className='text-center ml-3 text-[22px] mt-12 md:mt-24 md:text-center text-2xl mb-8 font-pixel py-5 lg:text-3xl font-retro leading-tight'
           style={{
             color: '#FFC0CB',
             textShadow:
-              '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+              '0 0 1px rgba(255, 192, 203, 0.7), 0 0 1px rgba(255, 105, 180, 0.6)',
             WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
             display: 'inline-block',
             paddingTop: '10px',
@@ -37,7 +37,7 @@ const About = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
           <div className='about-content'>
             <h2
-              className='text-3xl text-center md:mr-14 text-[#00FFFF] font-racing'
+              className='text-2xl text-center md:mr-14 text-[#00FFFF] font-racing'
               style={{
                 textShadow:
                   '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
@@ -82,7 +82,7 @@ const About = () => {
         <div className='grid grid-cols-1  md:grid-cols-2 gap-12 mt-12'>
           <div className='about-content'>
             <h2
-              className='text-3xl text-center text-[#00FFFF] font-racing'
+              className='text-2xl text-center text-[#00FFFF] font-racing'
               style={{
                 textShadow:
                   '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',

@@ -79,11 +79,11 @@ const Contact = () => {
         <span className='button-text'>Volver</span>
       </button>
       <h1
-        className='ml-24 md:text-center text-[20px] mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
+        className='ml-24 md:text-center text-[22px] mb-8 font-pixel py-5 lg:text-3xl font-retro leading-tight'
         style={{
           color: '#FFC0CB',
           textShadow:
-            '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+            '0 0 1px rgba(255, 192, 203, 0.7), 0 0 1px rgba(255, 105, 180, 0.6)',
           WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
           display: 'inline-block',
           paddingTop: '10px',
@@ -223,19 +223,19 @@ const Contact = () => {
             </MapContainer>
           </div>
           <div className='contact-info. md:mr-20 text-center mt-12'>
-            <h3 className='text-2xl text-center font-racing text-cyan-300 mb-4'>
+            <h3 className='text-2xl text-center font-racing text-[#00FFFF] mb-4'>
               Información de contacto
             </h3>
             <p className='text-gray-300 mb-2'>
-              <strong className='text-cyan-400'>Teléfono:</strong> (123)
+              <strong className='text-[#00FFFF]'>Teléfono:</strong> (123)
               456-7890
             </p>
             <p className='text-gray-300 mb-2'>
-              <strong className='text-cyan-400 text-center'>Email:</strong>{' '}
+              <strong className='text-[#00FFFF]'>Email:</strong>{' '}
               retrogamesjapan@gmail.com
             </p>
             <p className='text-gray-300'>
-              <strong className='text-cyan-400 text-center'>Ubicación:</strong>{' '}
+              <strong className='text-[#00FFFF]'>Ubicación:</strong>{' '}
               Tokio, Japón
             </p>
           </div>
@@ -251,7 +251,7 @@ const Contact = () => {
       >
         <div className='flex flex-col items-center justify-center'>
           <MdOutlineMarkEmailRead size={65} color='#03e9f4' />
-          <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-100 '>
+          <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-racing font-bold mb-4 text-center text-gray-300 '>
           ¡Gracias por tu mensaje!
           </h2>
           <p className='text-center text-gray-300'>

@@ -6,11 +6,11 @@ const NuestraMision = () => {
   return (
     <div className='container text-center mt-28 mx-auto'>
       <h1
-        className='text-center md:text-center text-[20px] mb-12 font-pixel py-5 lg:text-2xl font-retro leading-tight'
+        className='text-center md:text-center text-[22px] mb-12 font-pixel py-5 lg:text-3xl font-retro leading-tight'
         style={{
           color: '#FFC0CB',
           textShadow:
-            '0 0 15px rgba(255, 192, 203, 0.7), 0 0 30px rgba(255, 105, 180, 0.6)',
+            '0 0 1px rgba(255, 192, 203, 0.7), 0 0 1px rgba(255, 105, 180, 0.6)',
           WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
           display: 'inline-block',
           paddingTop: '10px',
@@ -35,7 +35,7 @@ const NuestraMision = () => {
             Juegos Clásicos
           </h2>
           <p
-            className='text-gray-100 p-6 text-sm lg:text-base'
+            className='text-gray-300 p-6 text-sm lg:text-base'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
@@ -62,7 +62,7 @@ const NuestraMision = () => {
             Consolas Originales
           </h2>
           <p
-            className='text-gray-100 p-6 text-sm lg:text-base'
+            className='text-gray-300 p-6 text-sm lg:text-base'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',
@@ -89,7 +89,7 @@ const NuestraMision = () => {
             Calidad Garantizada
           </h2>
           <p
-            className='text-gray-100 text-sm p-6 lg:text-base'
+            className='text-gray-300 text-sm p-6 lg:text-base'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',

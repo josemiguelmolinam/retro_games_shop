@@ -14,7 +14,7 @@ const Hero = () => {
 
   
           <p
-            className='text-[11px] mt-16 font-retro font-semibold p-6 text-gray-100 lg:text-base py-3 text-center mx-auto'
+            className='text-[11px] mt-16 font-retro font-semibold p-6 text-gray-200 lg:text-base py-3 text-center mx-auto'
             style={{
               textShadow:
                 '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2)',

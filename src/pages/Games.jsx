@@ -21,16 +21,16 @@ const Games = () => {
       </button>
       <div className="grid text-center">
         <h1
-          className="text-center mb-[-20px] text-[20px] md:text-2xl p-6 font-pixel py-5 font-retro leading-tight"
+          className="text-center mb-[-20px] text-[22px] md:text-3xl p-6 font-pixel py-5 font-retro leading-tight"
           style={{
             color: '#FFC0CB',
-            textShadow: '0 0 10px rgba(255, 192, 203, 0.7), 0 0 20px rgba(255, 105, 180, 0.6)',
+            textShadow: '0 0 1px rgba(255, 192, 203, 0.7), 0 0 1px rgba(255, 105, 180, 0.6)',
             WebkitTextStroke: '1px rgba(0, 0, 0, 0.8)',
           }}
         >
           Sección de Juegos Usados
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {gamesData.map((game) => (
             <Link
               key={game.id}

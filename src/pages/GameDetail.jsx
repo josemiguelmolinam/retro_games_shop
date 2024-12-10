@@ -48,7 +48,7 @@ const GameDetail = () => {
       {/* Title */}
       <div className='container items-center justify-center'>
         <h1
-          className='text-3xl md:text-2xl font-pixel font-retro leading-tight text-center'
+          className='text-[16.6px] md:text-2xl font-pixel font-retro leading-tight text-center'
           style={{
             color: '#FF00FF',
             WebkitTextStroke: '1px rgba(0, 0, 0, 0.7)',
@@ -63,7 +63,7 @@ const GameDetail = () => {
       {/* Photo Gallery */}
       <div className='py-6 text-center'>
         <h2
-          className='text-3xl font-racing mb-8'
+          className='text-[18px] md:text-[25px] font-racing mb-8'
           style={{
             color: '#00FFFF',
             textShadow:
@@ -93,7 +93,7 @@ const GameDetail = () => {
       <div className='px-4 md:px-12'>
         <div className='py-6 text-center rounded-lg mb-8'>
           <h2
-            className='text-3xl font-racing mb-16'
+            className='text-[18px] md:text-[25px] font-racing mb-16'
             style={{
               color: '#00FFFF',
               textShadow:
@@ -104,35 +104,35 @@ const GameDetail = () => {
           </h2>
 
           <div className='bg-black p-4 rounded-lg border-4 border-[#FF00FF]'>
-            <div className='text-gray-100'>
+            <div className='text-gray-300'>
               <div className='md:flex md:justify-center'>
                 <p className='mb-4 md:mr-8'>
-                  <span className='text-green-400 font-extrabold'>Título:</span>{' '}
+                  <span className='text-green-400 font-retro text-[12px]'>Título:</span>{' '}
                   {game.title}
                 </p>
                 <p className='mb-4 md:mr-8'>
-                  <span className='text-blue-400 font-extrabold'>Género:</span>{' '}
+                  <span className='text-blue-400 font-retro text-[12px]'>Género:</span>{' '}
                   {game.genre}
                 </p>
                 <p className='mb-4 md:mr-8'>
-                  <span className='text-yellow-400 font-extrabold'>Año:</span>{' '}
+                  <span className='text-yellow-400 font-retro text-[12px]'>Año:</span>{' '}
                   {game.year}
                 </p>
                 <p className='mb-4 md:mr-8'>
-                  <span className='text-purple-400 font-extrabold'>
+                  <span className='text-purple-400 font-retro text-[12px]'>
                     Precio:
                   </span>{' '}
                   {game.price} &euro;
                 </p>
                 <p className='mb-4'>
-                  <span className='text-red-400 font-extrabold'>
+                  <span className='text-red-400 font-retro text-[12px]'>
                     Plataforma:
                   </span>{' '}
                   {game.platform}
                 </p>
               </div>
               <p className='mb-4'>
-                <span className='text-cyan-400 font-extrabold'>
+                <span className='text-cyan-400 font-retro text-[12px]'>
                   Descripción:
                 </span>
                 <span className='text-gray-300 px-2'>{game.description}</span>
