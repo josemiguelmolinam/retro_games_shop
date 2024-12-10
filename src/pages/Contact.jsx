@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -6,6 +7,8 @@ import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import Modal from 'react-modal';
 import ReactLoading from 'react-loading';
 import emailjs from 'emailjs-com';
+import { TiArrowBack } from 'react-icons/ti';
+
 
 Modal.setAppElement('#root');
 
@@ -59,8 +62,22 @@ const Contact = () => {
     },
   };
 
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
+
+
   return (
-    <div className='mx-auto mt-[110px] md:mt-[145px] py-6 rounded-xl my-12 p-9 text-white md:max-w-7xl'>
+    <div className='mx-auto mt-[60px] md:mt-[145px] py-6 rounded-xl my-12 p-9 text-white md:max-w-7xl'>
+      <button
+        onClick={handleBackClick}
+        className="game-info square-button mb-12">
+          <TiArrowBack className='icon' />
+        <span className='button-text'>Volver</span>
+      </button>
       <h1
         className='ml-24 md:text-center text-[20px] mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
         style={{

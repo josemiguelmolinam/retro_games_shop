@@ -156,8 +156,8 @@ const GameDetail = () => {
                 alt={selectedImage.alt}
                 className='modal-img'
                 style={{
-                  maxWidth: '90%',
-                  maxHeight: '90%',
+                  maxWidth: '100%',
+                  maxHeight: '100%',
                   objectFit: 'contain',
                   margin: 'auto',
                 }}

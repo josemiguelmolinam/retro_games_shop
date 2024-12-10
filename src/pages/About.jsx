@@ -1,11 +1,28 @@
+import { useNavigate } from 'react-router-dom';
 import tiendaretro from '../assets/images/tienda-retro.jpg';
 import teamretrogame from '../assets/images/teamretrogame.jpg';
+import { TiArrowBack } from 'react-icons/ti';
+
 const About = () => {
+
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
+
   return (
     <div className='text-white py-[120px]'>
+      <button
+        onClick={handleBackClick}
+        className="game-info square-button ml-8">
+          <TiArrowBack className='icon' />
+        <span className='button-text'>Volver</span>
+      </button>
       <div className='container mx-auto px-12'>
         <h1
-          className='text-center md:text-center text-2xl mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
+          className='text-center mt-12 md:mt-24 md:text-center text-2xl mb-8 font-pixel py-5 lg:text-2xl font-retro leading-tight'
           style={{
             color: '#FFC0CB',
             textShadow:

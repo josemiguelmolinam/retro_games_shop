@@ -358,6 +358,15 @@ body::-webkit-scrollbar {
   margin-bottom: 20px;
 }
 
+
+@media (max-width: 768px) {
+  .modal-img {
+    max-width: 140px; 
+    max-height: 140px; 
+    transform: scale(1.2);
+  }
+}
+
 .modal-close-button {
   @apply text-[#03e9f4] border-2 border-[#03e9f4] text-sm font-bold rounded;
   padding: 8px 16px;
@@ -461,27 +470,52 @@ body::-webkit-scrollbar {
     box-shadow: 0 0 25px rgba(3, 233, 244, 0.5);
   }
 
-  .square-button {
-    width: 114px;
-    height: 36px;
-    border-radius: 8px;
-    border: 2px solid #0ef;
-    color: #0ef;
-    font-weight: bold;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    transition: background-color 0.3s, color 0.3s;
-    padding: 0 8px;
-    margin-top: 45px;
-  }
+ 
+.square-button {
+  width: 114px;
+  height: 36px;
+  border-radius: 8px;
+  border: 2px solid #0ef;
+  color: #0ef;
+  font-weight: bold;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0 8px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
 
-  .square-button:hover {
-    background-color: #0ef;
-    color: #fff;
+
+.square-button:hover {
+  background-color: #0ef;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .square-button {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    gap: 3px;
+    margin-bottom: 40px;
   }
+}
+
+
+@media (min-width: 769px) {
+  .square-button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    gap: 6px;
+    margin-bottom: 60px;
+  }
+}
 
   .icon {
     font-size: 1.25rem;
